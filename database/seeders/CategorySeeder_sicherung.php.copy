@@ -1,0 +1,141 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+
+class CategorySeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $node = \App\Category::create([
+            'name' => 'Anzeigen',
+        
+            'children' => [
+                [
+                    'name' => 'Auto, Rad & Boot',
+        
+                    'children' => [
+                        [ 'name' => 'Auto' ],
+                        [ 'name' => 'Autoteile & Reifen' ],
+                        [ 'name' => 'Boote & Bootszubehör' ],
+                        [ 'name' => 'Fahrräder & Zubehör' ],
+                        [ 'name' => 'Motorräder & Motorroller' ],
+                        [ 'name' => 'Motorradteile & Zubehör' ],
+                        [ 'name' => 'Nutzfahrzeuge & Anhänger' ],
+                        [ 'name' => 'Reparaturen & Dienstleistungen' ],
+                        [ 'name' => 'Wohnwagen & -mobile' ],
+                        [ 'name' => 'Weiteres Auto, Rad & Boot' ],
+                    ],
+                ],
+                [
+                    'name' => 'Dienstleistungen',
+        
+                    'children' => [
+                        [ 'name' => 'Financial' ],
+                    ],
+                ],
+                [
+                    'name' => 'Ticketschalter',
+
+                    'children' => [
+                        [ 'name' => 'Eintrittskarten & Tickets' ],
+                    ],
+                ],
+                [
+                    'name' => 'Elektronik',
+        
+                    'children' => [
+                        [ 'name' => 'Audio/TV' ],
+                    ],
+                ],
+                [
+                    'name' => 'Familie, Kind & Baby',
+        
+                    'children' => [
+                        [ 'name' => 'Kinderbetten' ],
+                    ],
+                ],
+                [
+                    'name' => 'Freizeit, Hobby & Nachbarschaft',
+        
+                    'children' => [
+                        [ 'name' => 'Mountainbike' ],
+                    ],
+                ],
+                [
+                    'name' => 'Haus & Garten',
+        
+                    'children' => [
+                        [ 'name' => 'Gartengeräte' ],
+                    ],
+                ],
+                [
+                    'name' => 'Tierwelt',
+        
+                    'children' => [
+                        [ 'name' => 'Haustiere' ],
+                    ],
+                ],
+                [
+                    'name' => 'Immobilien',
+        
+                    'children' => [
+                        [ 'name' => 'Eigentumswohnung' ],
+                        [ 'name' => 'Apartment' ],
+                    ],
+                ],
+                [
+                    'name' => 'Jobs',
+        
+                    'children' => [
+                        [ 'name' => 'Engeniering' ],
+                    ],
+                ],
+                [
+                    'name' => 'Mode & Beauty',
+        
+                    'children' => [
+                        [ 'name' => 'Naildesign' ],
+                    ],
+                ],
+                [
+                    'name' => 'Musik, Filme & Bücher',
+        
+                    'children' => [
+                        [ 'name' => 'Bücher' ],
+                    ],
+                ],
+                [
+                    'name' => 'Nachbarschaftshilfe',
+        
+                    'children' => [
+                        [ 'name' => 'Nachbarschaftshilfe' ],
+                    ],
+                ],
+                [
+                    'name' => 'Online-Unterricht & Kurse',
+        
+                    'children' => [
+                        [ 'name' => 'eLearning' ],
+                    ],
+                ],
+                [
+                    'name' => 'Verschenken & Tauschen',
+        
+                    'children' => [
+                        [ 'name' => 'Tauschen' ],
+                        [ 'name' => 'Verschenken' ],
+                    ],
+                ],
+            ], 
+        ]);
+
+        
+    }
+}

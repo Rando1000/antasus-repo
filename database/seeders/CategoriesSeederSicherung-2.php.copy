@@ -1,0 +1,448 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+
+class CategoriesSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $node = \App\Category::create([
+            'name' => 'Auto, Rad & Boot',
+        
+            'children' => [
+                [
+                    'name' => 'Auto',
+
+                    'children' => [
+                        [ 'name' => 'Limosine' ],
+                        [ 'name' => 'SUV' ],
+                    ],
+                ],
+            
+                [
+                    'name' => 'Autoteile & Reifen',
+
+                    'children' => [
+                        [ 'name' => 'Bremsen & Fahrwerk' ],
+                    ],
+                ],
+            
+                [
+                    'name' => 'Boote & Bootszubehör',
+                    'children' => [
+                        [ 'name' => 'Motorboote' ],
+                        [ 'name' => 'Segelboote' ],
+                    ],
+                ],
+            
+                [
+                    'name' => 'Fahrräder & Zubehör',
+                    'children' => [
+                        [ 'name' => 'e-Bike' ],
+                    ],
+                ],
+            
+                [
+                    'name' => 'Motorräder & Motorroller',
+                    'children' => [
+                        [ 'name' => 'Supersportler' ],
+                    ],
+                ],
+            
+                [
+                    'name' => 'Motorradteile & Zubehör',
+                    'children' => [
+                        [ 'name' => 'Bremsen & Fahrwerk' ],
+                    ],
+                ],
+            
+                [
+                    'name' => 'Nutzfahrzeuge & Anhänger',
+                    'children' => [
+                        [ 'name' => 'LKW' ],
+                        [ 'name' => 'Transporter' ],
+                    ],
+                ],
+            
+                [
+                    'name' => 'Reparaturen & Dienstleistungen',
+                    'children' => [
+                        [ 'name' => 'Werkstatt' ],
+                    ],
+                ],
+            
+                [
+                    'name' => 'Wohnwagen & -mobile',
+                    'children' => [
+                        [ 'name' => 'Wohnmobile' ],
+                        [ 'name' => 'Wohnwagen Anhänger' ],
+                    ],
+                ],
+            
+                    [
+                    'name' => 'Weiteres Auto, Rad & Boot',
+                    'children' => [
+                        [ 'name' => 'Autos' ],
+                    ],
+                ],
+            ],
+        ]);
+        
+        $node = \App\Category::create([
+            'name' => 'Dienstleistungen',
+                
+            'children' => [        
+                [
+                    'name' => 'Financial',
+        
+                    'children' => [
+                        [ 'name' => 'Invest' ],
+                    ],
+                ],
+            ],
+        ]);
+        
+        $node = \App\Category::create([
+            'name' => 'Ticketschalter',
+                
+            'children' => [        
+                [
+                    'name' => 'Eintrittskarten & Tickets',
+        
+                    'children' => [
+                        [ 'name' => 'Concert' ],
+                    ],
+                ],
+            ],
+        ]);
+
+        $node = \App\Category::create([
+            'name' => 'Electronics',
+                
+            'children' => [        
+                [
+                    'name' => 'Audio/TV',
+        
+                    'children' => [
+                        [ 'name' => 'HIFI' ],
+                    ],
+                ],
+            ],
+        ]);
+
+        $node = \App\Category::create([
+            'name' => 'Family, Kids & Baby',
+                
+            'children' => [        
+                [
+                    'name' => 'Spielzeug',
+        
+                    'children' => [
+                        [ 'name' => 'Holzspielzeug' ],
+                    ],
+                ],
+            ],
+        ]);
+
+        $node = \App\Category::create([
+            'name' => 'Freizeit, Hobby & Nachbarschaft',
+                
+            'children' => [        
+                [
+                    'name' => 'Fahräder',
+        
+                    'children' => [
+                        [ 'name' => 'Mountainbike' ],
+                    ],
+                ],
+            ],
+        ]);
+
+        $node = \App\Category::create([
+            'name' => 'Haus & Garten',
+                
+            'children' => [        
+                [
+                    'name' => 'Gartengeräte',
+        
+                    'children' => [
+                        [ 'name' => 'Rasenmäher' ],
+                    ],
+                ],
+            ],
+        ]);
+
+        $node = \App\Category::create([
+            'name' => 'Tierwelt',
+                
+            'children' => [        
+                [
+                    'name' => 'Haustiere',
+        
+                    'children' => [
+                        [ 'name' => 'Hund' ],
+                    ],
+                ],
+            ],
+        ]);
+
+        $node = \App\Category::create([
+            'name' => 'Immobilien',
+                
+            'children' => [        
+                [
+                    'name' => 'Eigentumswohnung',
+        
+                    'children' => [
+                        [ 'name' => 'Apartment' ],
+                    ],
+                ],
+            ],
+        ]);
+
+        $node = \App\Category::create([
+            'name' => 'Jobs',
+                
+            'children' => [        
+                [
+                    'name' => 'Logistik',
+        
+                    'children' => [
+                        [ 'name' => 'Fahrer' ],
+                        [ 'name' => 'Lagermitarbeiter' ],
+                    ],
+                ],
+            ],
+        ]);
+
+        $node = \App\Category::create([
+            'name' => 'Mode & Beauty',
+                
+            'children' => [        
+                [
+                    'name' => 'Fashion',
+        
+                    'children' => [
+                        [ 'name' => 'Damen' ],
+                        [ 'name' => 'Herren' ],
+                        [ 'name' => 'Kinder & Jugendliche' ],
+                        [ 'name' => 'Unisex' ],
+                    ],
+                ],
+            ],
+        ]);
+
+        $node = \App\Category::create([
+            'name' => 'Musik, Filme & Bücher',
+                
+            'children' => [        
+                [
+                    'name' => 'Filme',
+        
+                    'children' => [
+                        [ 'name' => 'DVD' ],
+                    ],
+                ],
+            ],
+        ]);
+
+        $node = \App\Category::create([
+            'name' => 'Nachbarschaftshilfe',
+                
+            'children' => [        
+                [
+                    'name' => 'Nachbarschaftshilfe',
+        
+                    'children' => [
+                        [ 'name' => 'Allgemein' ],
+                    ],
+                ],
+            ],
+        ]);
+
+        $node = \App\Category::create([
+            'name' => 'Online-Unterricht & Kurse',
+                
+            'children' => [        
+                [
+                    'name' => 'Kurse',
+        
+                    'children' => [
+                        [ 'name' => 'eLearning' ],
+                    ],
+                ],
+            ],
+        ]);
+
+        $node = \App\Category::create([
+            'name' => 'Verschenken & Tauschen',
+                
+            'children' => [        
+                [
+                    'name' => 'Verschenken & Tauschen',
+        
+                    'children' => [
+                        [ 'name' => 'Verschenken' ],
+                        [ 'name' => 'Tauschen' ],
+                    ],
+                ],
+            ],
+        ]);
+
+       
+
+        
+
+                /*
+                    'name' => 'Ticketschalter',
+
+                    'children' => [
+                        [ 'name' => 'Eintrittskarten & Tickets' ],
+                    ],
+                ],[
+                    'name' => 'Elektronik',
+        
+                    'children' => [
+                        [ 'name' => 'Audio/TV' ],
+                    ],
+                ],[
+                    'name' => 'Familie, Kind & Baby',
+        
+                    'children' => [
+                        [ 'name' => 'Kinderbetten' ],
+                    ],
+                ],[
+                    'name' => 'Freizeit, Hobby & Nachbarschaft',
+        
+                    'children' => [
+                        [ 'name' => 'Mountainbike' ],
+                    ],
+                ],[
+                    'name' => 'Haus & Garten',
+        
+                    'children' => [
+                        [ 'name' => 'Gartengeräte' ],
+                    ],
+                ],[
+                    'name' => 'Tierwelt',
+        
+                    'children' => [
+                        [ 'name' => 'Haustiere' ],
+                    ],
+                ],[
+                    'name' => 'Immobilien',
+        
+                    'children' => [
+                        [ 'name' => 'Eigentumswohnung' ],
+                        [ 'name' => 'Apartment' ],
+                    ],
+                ],[
+                    'name' => 'Jobs',
+        
+                    'children' => [
+                        [ 'name' => 'Engeniering' ],
+                    ],
+                ],[
+                    'name' => 'Mode & Beauty',
+        
+                    'children' => [
+                        [ 'name' => 'Naildesign' ],
+                    ],
+                ],[
+                    'name' => 'Musik, Filme & Bücher',
+        
+                    'children' => [
+                        [ 'name' => 'Bücher' ],
+                    ],
+                ],[
+                    'name' => 'Nachbarschaftshilfe',
+        
+                    'children' => [
+                        [ 'name' => 'Nachbarschaftshilfe' ],
+                    ],
+                ],[
+                    'name' => 'Online-Unterricht & Kurse',
+        
+                    'children' => [
+                        [ 'name' => 'eLearning' ],
+                    ],
+                ],[
+                    'name' => 'Verschenken & Tauschen',
+        
+                    'children' => [
+                        [ 'name' => 'Tauschen' ],
+                        [ 'name' => 'Zu Verschenken' ],
+                    ],
+                ],
+            ],
+        ]);*/
+    }
+}
+/*
+'name' => 'Auto, Rad & Boot',
+        
+            'children' => [
+                [
+                    'name' => 'Auto',
+        
+                    'children' => [
+                        [ 'name' => 'Cabrio' ],
+                        [ 'name' => 'limosine' ],
+                        [ 'name' => 'SUV' ],
+                    ],
+
+                    'name' => 'Autoteile & Reifen',
+                    'children' => [
+                        [ 'name' => 'Bremsen' ],
+                        [ 'name' => 'Fahrwerk' ],
+                        [ 'name' => 'Reifen & Räder' ],
+                    ],
+
+                    'name' => 'Boote & Bootszubehör',
+                    'children' => [
+                        [ 'name' => 'Motorboot' ],
+                        [ 'name' => 'Segelboot' ],
+                    ],
+
+                    'name' => 'Fahrräder & Zubehör',
+                    'children' => [
+                        [ 'name' => 'E-Bike' ],
+                    ],
+
+                    'name' => 'Motorräder & Motorroller',
+                    'children' => [
+                        [ 'name' => 'Enduro' ],
+                        [ 'name' => 'Supersportler' ],
+                        [ 'name' => 'Sporttourer' ],
+                        [ 'name' => 'Super Moto' ],
+                    ],
+
+                    'name' => 'Motorradteile & Zubehör',
+                    'children' => [
+                        [ 'name' => 'Reifen & Räder' ],
+                    ],
+
+                    'name' => 'Nutzfahrzeuge & Anhänger',
+                    'children' => [
+                        [ 'name' => 'Anhänger' ],
+                    ],
+
+                    'name' => 'Reparaturen & Dienstleistungen',
+                    'children' => [
+                        [ 'name' => 'Fahrzeugüberführung' ],
+                    ],
+
+                    'name' => 'Wohnwagen & -mobile',
+                    'children' => [
+                        [ 'name' => 'Wohnmobil' ],
+                    ],
+                ],
+            ],
+*/

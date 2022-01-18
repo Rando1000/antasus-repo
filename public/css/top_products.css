@@ -1,0 +1,155 @@
+
+.a-double-margin.l-container-row {
+    margin-bottom: 24px;
+    border-radius: 10px;
+}
+
+.tilesbox, .tilesbox-featured {
+    background-color: #E9E9E9;
+    padding: 12px;
+}
+
+.contentbox {
+    position: relative;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 10px;
+    /* margin-bottom: 0; */
+    color: #202020;
+}
+
+.tilesbox > .tilesbox--header, .tilesbox-featured > .tilesbox--header {
+    margin-bottom: 12px;
+}
+
+.tilesbox-featured > .tilesbox--header {
+    border-bottom-style: ridge;
+    border-radius: 10px;
+    border-color: #00fdcf;
+}
+
+.splitheader-centered {
+    display: flex;
+    box-sizing: border-box;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.newber {
+    border-radius: 10px;
+    background: linear-gradient(150deg, #eef3f3 0%, #ebeeee 50%, #e1e2e2 50%, #c1c3c3 100%);
+    margin-top: 2%;
+    border-radius: 10px;
+}
+
+.itemy {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.colty {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.thumb-wrapper {
+    display: flex;
+    padding: 10px;
+        padding-top: 10px;
+    object-fit: cover;
+    padding-top: 20px;
+    position: relative;
+    width: 100%;
+    flex: 1 1 25%;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    border-radius: 10px;
+    text-align: center;
+    margin: 3px;
+    display: inline-grid;
+    position: relative;
+    flex: 0 0 24.2%;
+    cursor: pointer;
+}
+
+.bg-white {
+    background-color: #fff !important;
+}
+
+img {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.mb-1
+{
+    margin-bottom: .25rem !important;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 6px;
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mb-1 > a {
+    color: #202020;
+}
+
+.shadow-sm {
+    text-align: center;
+    cursor: pointer;
+}
+
+.itemtile-ribbon {
+    background-color: #000;
+    color: #00fdcf;
+    font-weight: bold;
+    display: inline-block;
+    padding: 2px 6px;
+    position: absolute;
+    right: -3px;
+    top: 140px;
+    text-align: right;
+    max-width: 100px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: right;
+}
+
+.itemtile-ribbon::before {
+    right: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+/* .itemtile-ribbon {
+    color: #00fdcf;
+    font-weight: bold;
+    text-align: right;
+    font-size: 12px;
+    cursor: pointer;
+} */
+
+.fas {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    color: #00fdcf;
+}
